@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>關於我們</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<style>
+			body{
+				font-family: 微軟正黑體;
+				}
+			header{
+				position: fixed;
+				top: 0;
+				left:0;
+				width: 100%;
+				height: 50px;
+				z-index: 3;
+				background-color:#FFB3A7;
+			}
+			body{
+				background-image: url("images/背景.png");
+				background-repeat: repeat-y;
+				background-size:100%,100%;
+			}
+			.navtop{
+				margin-top: 70px;
+				margin-left: 40px;
+				z-index: 0;
+				text-align: center;
+				clear:both;
+			}
+			.top{
+				position: absolute;
+				top: 14.5px;
+				left:1100px;
+			}
+			h1{
+				color: #fff;
+				position: absolute;
+				top: 0px;
+				left: 10px;
+			}
+			ul.ch{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				border: #FCC9B9 1px solid;
+				display: inline-block;
+			}
+			ul.ch li{
+				position: relative;
+				white-space: nowrap;
+				border: #FCC9B9 1px solid;
+				border-right: #FCC9B9 1px solid;
+			}
+			ul.ch > li {
+				float: left; /* 只有第一層是靠左對齊*/
+			}
+			ul.ch a {
+				display: block;
+				padding: 0px 40px;
+				text-decoration: none;
+				line-height: 35px;
+				color: black;
+				background-color: white;
+			}
+			ul.ch a:hover{
+				display: block;
+				padding: 0px 40px;
+				text-decoration: none;
+				line-height: 35px;
+				color: white;
+				background-color: #F2666C;
+			}
+			img.ho{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 0;
+				left:1200px;
+			}
+			section{
+				background-color: white;
+				border: #FCC9B9 1px solid;
+				width: 1000px;
+				margin-top: 30px;
+				margin-left: 150px;
+				height: 970px;
+			}
+			h3{
+				margin-top: 20px;
+				background-color: #FFF0F5;
+				color: #808080;
+				margin-right: 50px;
+				margin-left: 50px;
+			}
+			form.ss{
+				word-break: break-all;
+				margin-right: 50px;
+				margin-left: 50px;
+			}
+			p.ss{
+				word-break: break-all;
+				margin-right: 100px;
+				margin-left: 100px;
+			}
+			img.try{
+				float: right;
+				width: 300px;
+			}
+			img.r{
+				float: right;
+				width: 200px;
+				height: 200px;
+				border-radius:999em;
+			}
+			img.l{
+				float: left;
+				width: 200px;
+				height: 200px;
+				border-radius:999em;
+			}
+			footer {
+				background-color: #B0E0E6	;
+			width: 100%;
+			height: 380px;
+			padding:2% 2% 0% 2%;
+			position: absolute;
+			top: 1120px;
+			}
+			th{
+				color: #fff;
+				font-size: 16px;
+			padding: 5px;
+			height: 40px;
+			}
+			td{
+				color: #fff;
+				font-size: 16px;
+			padding: 10px;
+			height: 40px;
+			letter-spacing: 10px;
+			}
+			div.foot{
+			margin-left: 35px;
+			columns: 2; column-rule: #F0F8FF double 1px;
+			}
+			div.input{
+				margin-left: 35px;
+			}
+			div.web{
+				margin-left: 35px;
+				-webkit-column-break-before: always;
+			}
+			p.fl{
+				color: #fff;
+				font-size: 16px;
+			padding: 5px;
+			font-weight: bolder;
+			}
+			.pics{clear: both; padding-top: 10px;}
+			.pics img{
+			/* 淡出淡入效果2秒 */
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-o-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+			}
+			.pics img:last-child:hover{
+		/* 滑入時第一張透明度設0 */
+		opacity:0;}
+		pre{
+			position: relative;
+			left: -150px;
+			top: -10px;
+			background-color: #ffe6e6;
+			font: 20px;
+			padding: 6PX;
+		}
+		p.wu{
+			position: relative;
+			left: -150px;
+			top: -10px;
+			word-break: break-all;
+			font-size: 16px;
+			margin-left: 500px;
+			background-color: #ffe6e6;
+		}
+		p.ya{
+			position: relative;
+			left: -350px;
+			top: -10px;
+			word-break: break-all;
+			font-size: 16px;
+			margin-left: 500px;
+			background-color: #ffe6e6;
+		}
+		img.toop{
+				width: 100px;
+				position: relative; top: -15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<header>
+				<h1 align="left"><img src="images/樂學園.png" class="toop"></h1>
+				<p class="top">
+					<a href="member.html" target="_top" style="color: white;">關於我們</a>
+				</p>
+				<a href="index.html" target="_top"><img src="images/home.png" class="ho"></a>
+			</header>
+		</div>
+		<div class="navtop">
+			<nav>
+				<ul class="ch">
+					<li style="position: absolute; top:70px; left: 275px;"><a href="video.html" target="_top">影片導覽</a>
+					<li style="position: absolute; top:70px; left: 420px;"><a href="walk.html" target="_top">自在行</a>
+					<li style="position: absolute; top:70px; left: 549px;"><a href="think.html" target="_top">有思隨</a>
+					<li style="position: absolute; top:70px; left: 668px;"><a href="water.html" target="_top">活水來</a>
+					<li style="position: absolute; top:70px; left: 787px;"><a href="song.html" target="_top">風雅頌</a>
+					<li style="position: absolute; top:70px; left: 906px;"><a href="spring.html" target="_top">總是春</a>
+				</ul>
+			</nav>
+		</div>
+		<section>
+			<h3>組員介紹</h3>
+			<div class="pics">
+				<p class="ss"><img src="images/49.jpg" class="l"><a href="https://www.instagram.com/tudavid0721/?hl=zh-tw"><img src="images/C.png" class="l" style="position:relative;left: -200px;"></a>
+				<p class="wu" style="position:relative;top:5px;">
+				杜得瑋:<br>
+				本來以行銷學校教學資源的大方向在組員討論後聚焦到以「樂學園」內各個區域的功能和教學、自學、輔導資源為主題，旨在以影片導覽和資源展示來行銷這個中原大學獨有的多功能學習與展演空間。我負責的是資料蒐集、文本、部分的影片和照片的拍攝、出演，在專案計畫與討論的過程中自己也更深入了解校內的設施和規劃，才發現其實學校確實提供了不錯的教學資源和藝術空間，算是對學校有了更豐富的認識。</p>
+				</p>
+			</div>
+			<div class="pics">
+				<p class="ss">
+					<p class="ya" >
+						王筱瑜：<br>
+						這次期中專案的網頁框架和大部分的排版都是我設計的，在寫CSS的時候遇到了很多困難，比如如果使用了趴數只要網頁一縮小排版就會亂掉、為了要讓組員的大頭貼能切換兩種圖片，在網路上找很久、為了要在首頁放滑動照片跑去找上一次的甲班夥伴，讓他教我怎麼寫，而當我解決了一個又一個的問題，成就感簡直要把我淹沒了，但我還有許多的缺點要修正，而我的組員們幫我處理其他文書和影片，還幫我調了網頁的色調和設計了四個腳色，因為他們我才能專心地修改程式。
+					</p>
+					<img src="images/26.jpg" class="r" style="position:relative;left: -100px; top:-220px;"><a href="https://www.instagram.com/kellkell225/?hl=zh-tw"><img src="images/B.png" class="r" style="position:relative;left: 100px; top:-220px;"></a></p>
+				</div>
+				<div class="pics">
+					<p class="ss"><img src="images/47.jpg" class="l" style="position:relative;top:-210px;"><a href="https://www.instagram.com/yomi_0419/?hl=zh-tw"><img src="images/D.png" class="l" style="position:relative;left: -200px;top:-210px;"></a>
+					<p class="wu" style="position:relative;top:-220px;">
+						黃昱齊：<br>這次期中專案我是負責文書、主題方面的工作，雖然網頁主要不是我寫的，但我們還是有一同約出來討論網頁設計，因為平時的練習題都比較少做排版的練習，所以我們在框架的部分弄很久，碰到一些困難，但最後都算是有解決。然而，這次期中專案主要是要行銷中原大學，所以影片的部分雖然我們入鏡時間較短，但也確實有做到行銷的部分。我覺得整體來說除了排版可能會有小問題外，其他部分都算完成，這些都要謝謝組員們的幫忙及分工下才能做出來的。
+					</p>
+				</p>
+			</div>
+			<div class="pics">
+				<p class="ss">
+				<p class="ya" style="position: relative;top: -230px;">
+				儲韶儀:<br>
+				這次期中專案我是負責剪輯影片以及網頁背景設計的工作，由於是第一次剪輯影片，所以途中有很多不順手的地方，雖然耗費了很多時間去解決問題，但是這也讓我學到了很多關於剪輯軟件的用法。而關於背景圖的設計則是以可愛的小插圖為主題，而背景的整體配色則是偏向可愛的馬卡龍色系，雖然在準備的時間上有些匆忙，但最終還是成功地完成了繪圖。經過這次的期中報告也學習到了很多有關版面設計的CSS語法，非常感謝耐心教導我的組員。
+				</p>
+				<img src="images/10.jpg" class="r" style="position:relative;left: -100px; top:-450px;"><a href="https://www.instagram.com/juye5268/?hl=zh-tw"><img src="images/A.png" class="r" style="position:relative;left: 100px; top:-450px;"></a></p>
+			</div>
+		</section>
+		<footer>
+			<div class="foot">
+				<div class="input">
+					<form method="get" class="ss">
+						<table>
+							<tr>
+								<th>姓名:</th>
+								<td><input type="text" name="name" size="10" maxlength="10" /></td>
+							</tr>
+							<tr>
+								<th>性別:</th>
+								<td><input type="radio" name="gender" value="男" />男<input type="radio" name="gender" value="女"/>女</td>
+							</tr>
+							<tr>
+								<th>學校:</th>
+								<td><input type="text" name="school" size="10" maxlength="10" /></td>
+							</tr>
+							<tr>
+								<th>email:</th>
+								<td><input type="email" name="mail"/></td>
+							</tr>
+							<tr>
+								<th>給我們的意見:</th>
+								<td><textarea name="suggest" cols="20" rows="2" wrap="hard"> </textarea></td>
+							</tr>
+						</table>
+						<center><input type="submit" name="ok" value="送出" /></center>
+					</form>
+				</div>
+				<div class="web">
+					<p class="fl">中原大學官網:<br><a href="http://www1.cycu.edu.tw"><img src="images/school.jpg" width="350" height="100"></a></p>
+					<p class="fl">風雅頌粉專:<a href="https://www.facebook.com/artssaloncycu/">https://www.facebook.com/artssaloncycu/</a></p>
+				</div>
+			</footer>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		</body>
+	</html>
